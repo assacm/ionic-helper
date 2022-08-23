@@ -117,3 +117,23 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+ion-icon {
+
+  &[class*=custom-] {
+  
+  mask-size: contain;
+  
+  mask-position: 50% 50%;
+  
+  mask-repeat: no-repeat;
+  
+  background: currentColor;
+  
+  width: 1em;
+  
+  height: 1em;
+  
+  }
+  
+  }

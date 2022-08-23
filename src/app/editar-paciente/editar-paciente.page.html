@@ -1,0 +1,131 @@
+<ion-toolbar>
+  <ion-button slot="start" [routerLink]="['/info-paciente']">
+        <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+        Volver
+  </ion-button>
+ </ion-toolbar>
+
+<ion-content>
+  <div class="contenedor-datos"> 
+      <div class="cajita">
+      <div class="uno" ><ion-label>Alma Julissa Casillas Mendivil{{nombre}}</ion-label></div>
+      <div class="dos"><ion-label> HLP001</ion-label></div>
+      </div>
+  
+  
+      <div class="contenedor">
+        <ion-label>Edad</ion-label>
+      <div class="dos"><ion-input id="edad"></ion-input> </div> 
+      </div>
+      <div class="contenedor">
+      <ion-label>Sexo</ion-label>
+         <ion-list>
+             <ion-item>
+               <ion-select interface="popover" placeholder="Seleccionar sexo">
+                  <ion-select-option value="hombre">Hombre</ion-select-option>
+                  <ion-select-option value="mujer">Mujer</ion-select-option>
+               </ion-select>
+             </ion-item>
+        </ion-list>
+      </div>
+      <div class="contenedor">
+        <ion-label>Tipo de sangre</ion-label>
+           <ion-list>
+               <ion-item>
+                 <ion-select interface="popover" placeholder="Seleccionar tipo de sangre">
+                    <ion-select-option value="apositivo">A+</ion-select-option>
+                    <ion-select-option value="anegativo">A-</ion-select-option>
+                 </ion-select>
+               </ion-item>
+          </ion-list>
+        </div>
+        <div class="contenedor">
+          <ion-label>Servicio médico</ion-label>
+             <ion-list>
+                 <ion-item>
+                   <ion-select interface="popover" placeholder="Seleccionar sexo">
+                      <ion-select-option value="imss">IMSS</ion-select-option>
+                      <ion-select-option value="isste">ISSTE</ion-select-option>
+                   </ion-select>
+                 </ion-item>
+            </ion-list>
+          </div>
+          <div class="contenedor">
+            <ion-label>No. Seguridad Social</ion-label>
+            <ion-input id="edad"></ion-input> 
+          </div>    
+
+      <div class="desplegables">
+
+    <ion-label>Alergias</ion-label>
+          <div class="bloque-input">   
+            <ion-input ></ion-input> <ion-button><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+          </div>
+          <div class="acordion">
+          <ion-accordion-group>
+              <ion-accordion value="first">
+                <ion-item slot="header" color="light">
+                  <ion-label>Alergias</ion-label>
+                </ion-item>
+                <div class="ion-padding" slot="content">
+                  <ion-list>
+                    <ion-item *ngFor="let entry of form">
+                        <ion-label>{{entry.val}}</ion-label>
+                        <ion-button slot="end"><ion-icon name="remove-circle-outline"></ion-icon></ion-button>
+                    </ion-item>
+                  </ion-list>
+                </div>
+              </ion-accordion>
+
+          </ion-accordion-group>
+          </div>
+    
+    <ion-label>Medicamentos</ion-label>
+      <div class="bloque-input">
+          <ion-input ></ion-input> <ion-button><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+      </div>
+          <div class="acordion">
+              <ion-accordion-group>
+                <ion-accordion value="first">
+                  <ion-item slot="header" color="light">
+                      <ion-label>Medicamentos</ion-label>
+                  </ion-item>
+                    <div class="ion-padding" slot="content">
+                      <ion-list>
+                          <ion-item *ngFor="let entry of form">
+                              <ion-label>{{entry.val}}</ion-label>
+                              <ion-button slot="end"><ion-icon name="remove-circle-outline"></ion-icon></ion-button>
+                          </ion-item>
+                      </ion-list>
+                    </div>
+                </ion-accordion>
+
+              </ion-accordion-group>
+          </div>
+    <ion-label>Enfermedades</ion-label>
+      <div class="bloque-input">
+        <ion-input ></ion-input> <ion-button><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+      </div>
+      <div class="acordion">
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+                <ion-label>Enfermedades</ion-label>
+            </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-list>
+                    <ion-item *ngFor="let entry of form">
+                        <ion-label>{{entry.val}}</ion-label>
+                        <ion-button slot="end"><ion-icon name="remove-circle-outline"></ion-icon></ion-button>
+                    </ion-item>
+                </ion-list>
+              </div>
+          </ion-accordion>
+
+        </ion-accordion-group>
+    </div>
+      </div>
+
+      <div class="buttons"> <ion-button size="large" [routerLink]="['/info-paciente']">Guardar</ion-button></div>
+  </div>
+</ion-content>

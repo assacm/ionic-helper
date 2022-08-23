@@ -1,0 +1,29 @@
+ion-toolbar ion-button{
+
+    --background: #fff;
+    --color: #5B5858;
+    --box-shadow:none;
+    text-transform: none;
+}
+ion-card{
+    padding: 15px;
+    color:#6C7572 ;
+    font-family: 'Segoe UI';
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+.uno{
+    flex-grow:1;
+    
+}
+.dos{
+    flex-grow: 2;
+}
+
+.uno ion-icon{
+    font-size: 45px;
+    margin-right: 8px;
+}

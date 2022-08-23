@@ -4,16 +4,52 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'log-in',
     pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: 'log-in',
     loadChildren: () => import('./log-in/log-in.module').then( m => m.LogInPageModule)
+  },
+  {
+    path: 'pacientes',
+    loadChildren: () => import('./pacientes/pacientes.module').then( m => m.PacientesPageModule)
+  },
+  {
+    path: 'dispositivos',
+    loadChildren: () => import('./dispositivos/dispositivos.module').then( m => m.DispositivosPageModule)
+  },
+  {
+    path: 'contactos',
+    loadChildren: () => import('./contactos/contactos.module').then( m => m.ContactosPageModule)
+  },
+  {
+    path: 'ayuda',
+    loadChildren: () => import('./ayuda/ayuda.module').then( m => m.AyudaPageModule)
+  },
+  {
+    path: 'info-paciente',
+    loadChildren: () => import('./info-paciente/info-paciente.module').then( m => m.InfoPacientePageModule)
+  },
+  {
+    path: 'registrar-cuidador',
+    loadChildren: () => import('./registrar-cuidador/registrar-cuidador.module').then( m => m.RegistrarCuidadorPageModule)
+  },
+  {
+    path: 'editar-paciente',
+    loadChildren: () => import('./editar-paciente/editar-paciente.module').then( m => m.EditarPacientePageModule)
+  },
+  {
+    path: 'registrar-disp',
+    loadChildren: () => import('./registrar-disp/registrar-disp.module').then( m => m.RegistrarDispPageModule)
+  },
+  {
+    path: 'registro-paciente',
+    loadChildren: () => import('./registro-paciente/registro-paciente.module').then( m => m.RegistroPacientePageModule)
+  },
+  {
+    path: 'lista-contactos',
+    loadChildren: () => import('./lista-contactos/lista-contactos.module').then( m => m.ListaContactosPageModule)
   }
 ];
 

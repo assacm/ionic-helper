@@ -1,0 +1,31 @@
+<ion-toolbar>
+  <ion-button slot="start" [routerLink]="['/contactos']">
+        <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+        Volver
+  </ion-button>
+ </ion-toolbar>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <h2><strong>Contactos</strong></h2>
+    </ion-list-header> 
+       <ion-card button="true" [routerLink]="['/lista-contactos']">
+          <div class="contenedor">
+              
+            <div class="uno">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+            <div class="dos">
+              <h2>Alma Delia Mendivil Romero</h2>
+              <ion-label>Madre</ion-label>
+            </div>
+         </div>    
+       </ion-card>
+    </ion-list>
+    <ion-fab [routerLink]="['/']" vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="person-add"></ion-icon>      
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>

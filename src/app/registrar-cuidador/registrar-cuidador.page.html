@@ -1,0 +1,46 @@
+<ion-toolbar>
+  <ion-button slot="start" [routerLink]="['/log-in']">
+        <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+        Volver
+  </ion-button>
+ </ion-toolbar>
+
+<ion-content>
+
+<div class="formulario">
+  <h2>Registro de cuidador</h2>
+ <div class="uno">
+    <ion-label>Nombre</ion-label>
+    <ion-input></ion-input>
+    <ion-label>Apellidos</ion-label>
+    <ion-input></ion-input>
+  </div>
+   <div class="contenedor">
+     <ion-label>Edad</ion-label>
+     <div class="dos"><ion-input id="edad"></ion-input> </div> 
+    </div>
+    <div class="contenedor">
+       <ion-label>Sexo</ion-label>
+          <ion-list>
+              <ion-item>
+                <ion-select interface="popover" placeholder="Seleccionar sexo">
+                   <ion-select-option value="hombre">Hombre</ion-select-option>
+                   <ion-select-option value="mujer">Mujer</ion-select-option>
+                </ion-select>
+              </ion-item>
+         </ion-list>
+     </div>
+     <div class="uno">
+        <ion-label>Correo electrónico</ion-label>
+        <ion-input></ion-input>
+        <ion-label >Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+        <ion-label>Confirmar contraseña</ion-label>
+        <ion-input type="password"></ion-input> 
+     </div>  
+</div>
+<div class="button"><ion-button [routerLink]="['/log-in']" size="large">Registrar</ion-button>
+</div>
+
+
+</ion-content>

@@ -1,0 +1,78 @@
+ion-toolbar ion-button{
+
+    --background: #fff;
+    --color: #5B5858;
+    --box-shadow:none;
+    text-transform: none;
+}
+.contenedor-datos{
+    padding-left: 15px;
+    margin: 15px;
+
+}
+.contenedor-datos .cajita{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contenedor-datos .cajita .uno{
+    
+    width: 100px;
+    flex-grow: 1;
+}
+.uno ion-label{
+    font-weight: 600;
+    font-size: 18px;
+    font-family:'Segoe UI';
+    color:#6C7572;
+}
+.dos ion-label{
+    font-family: 'Segoe UI';
+    color:#9E9595;
+}
+.contenedor-datos .cajita .dos{
+    width: 100px;
+    margin-left: 10px;  
+    flex-grow: 2;
+    font-size: 18px;
+    font-style:normal;
+}
+.buttons {
+    text-align:center;
+}
+.buttons .secundario  {
+    --background: #fff;
+    color:#5B5858;
+
+}
+ion-button{
+    text-transform: none;
+    margin:8px;
+    --border-radius:15px;
+    font-size: 18px;
+}
+
+.desplegables{
+    width: 80%;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    margin: 15px auto 40px 15px;
+}
+.alergias{
+    margin-bottom:15px;
+}
+.medicamentos{
+    margin-bottom:15px;
+
+}
+.enfermedades{
+    margin-bottom:15px;
+
+}
+
+ion-item ion-label{
+    font-family: 'Segoe UI';
+    --color:#6C7572;
+    font-weight: 600;
+}

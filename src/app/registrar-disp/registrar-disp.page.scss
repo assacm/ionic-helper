@@ -1,0 +1,35 @@
+ion-toolbar ion-button{
+
+    --background: #fff;
+    --color: #5B5858;
+    --box-shadow:none;
+    text-transform: none;
+}
+
+h2{
+    margin: 30px;
+    font-weight: 600;
+}
+.contenedor{
+    padding:30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+}
+ion-label{
+    font-weight: 400;
+}
+ion-input{
+    --background:#F3F3F3;
+    margin-top:15px ;
+    margin-bottom: 15px;
+    border-radius:10px;
+    font-size: 18px;
+    font-family:'Segoe UI';
+}
+.contenedor ion-button{
+    text-transform: none;
+    --border-radius:15px;
+    font-size: 20px;
+}
+

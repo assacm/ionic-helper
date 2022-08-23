@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contactos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-list>
+    <ion-list-header>
+      <h2><strong>Pacientes</strong></h2>
+    </ion-list-header> 
+       <ion-card button="true" [routerLink]="['/lista-contactos']">
+          <div class="contenedor">
+              
+            <div class="uno">
+              <ion-icon name="person-sharp"></ion-icon>
+
+            </div>
+            <div class="dos">
+              <h2 style="margin:8px;">Alma Julissa Casillas Mendivil</h2>
+            </div>
+         </div>    
+       </ion-card>
+    </ion-list>
+
+</ion-content>

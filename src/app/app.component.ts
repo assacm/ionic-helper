@@ -5,14 +5,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Pacientes', url: '/pacientes', icon: 'person-outline' },
+    { title: 'Dispositivos', url: '/dispositivos', icon: 'watch-outline' },
+    { title: 'Contactos', url: '/contactos', icon: 'people-circle-outline' },
+    { title: 'Ambulancia', url: '/folder/Archived', icon: 'medical-outline' },
+    { title: 'Ayuda', url: '/ayuda', icon: 'help-circle-outline' },
+    { title: 'Cerrar sesión', url: '/log-in', icon: 'log-out-outline' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }
