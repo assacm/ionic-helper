@@ -1,0 +1,77 @@
+{  "paciente": [
+        
+        {
+            "id":"1",
+            "disp":"123456",
+            "nombre":"Keeley",
+            "apellido":"Bosco",
+            "sexo":"Mujer",
+            "edad":"60",
+            "sangre":"O+",
+            "servicioMedico":"IMSS", 
+            "alergias":["Insulina"], 
+            "medicamentos":["Losartan","Amlodipino"],
+            "enfermedades":["Hipertensión"],
+            "nss":"4356786545678"
+        },
+        {
+            "id":"2",
+            "disp":"654321",
+            "nombre":"Rubye Jerde",
+            "apellido":"Jerde",
+            "sexo":"Mujer",
+            "edad":"70",
+            "sangre":"A+",
+            "servicioMedico":"ISSSTE", 
+            "alergias":["Ninguna"], 
+            "medicamentos":["Omeprazol"],
+            "enfermedades":["Gastritis"],
+            "nss":"23334567664325"
+        },
+        {
+            "id":"3",
+            "disp":"876544",
+            "nombre":"John",
+            "apellido":"Breitenberg",
+            "sexo":"Hombre",
+            "edad":"6",
+            "sangre":"A-",
+            "servicioMedico":"IMSS", 
+            "alergias":["Paracetamol"], 
+            "medicamentos":["Sulfato ferroso"],
+            "enfermedades":["Anemia"],
+            "nss":"34567890976789"
+        },
+        {
+            "id":"4",
+             "disp":"098743",
+             "nombre":"Esteban",
+             "apellido":"Von",
+             "sexo":"Hombre",
+             "edad":"91",
+             "sangre":"O+",
+             "servicioMedico":"ISSSTE", 
+            "alergias":["Ninguna"], 
+            "medicamentos":["Metformina"],
+            "enfermedades":["Diabetes","Hipertensión"],
+            "nss":"23456788765"
+       },
+        {
+            "id":"5",
+            "disp":"462458",
+            "nombre":"Darian",
+            "apellido":"Swift",
+            "sexo":"Mujer",
+            "edad":"61",
+            "sangre":"O+",
+            "servicioMedico":"INSABI", 
+            "alergias":["Nueces","Huevo"], 
+            "medicamentos":["Bezafibrato","Losartan","Metformina"],
+            "enfermedades":["Hipertensión","Colesterol","Triglicérdos"],
+            "nss":"1231412345"
+        }
+
+        
+    ]
+    
+}

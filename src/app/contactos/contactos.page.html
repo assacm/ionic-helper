@@ -13,7 +13,7 @@
     <ion-list-header>
       <h2><strong>Pacientes</strong></h2>
     </ion-list-header> 
-       <ion-card button="true" [routerLink]="['/lista-contactos']">
+       <ion-card button="true" *ngFor="let paciente of pacientes" (click)="contactos()">
           <div class="contenedor">
               
             <div class="uno">
@@ -21,7 +21,7 @@
 
             </div>
             <div class="dos">
-              <h2 style="margin:8px;">Alma Julissa Casillas Mendivil</h2>
+              <h2 style="margin:8px;">{{paciente.nombre}} {{paciente.apellido}}</h2>
             </div>
          </div>    
        </ion-card>

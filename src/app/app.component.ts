@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +15,7 @@ export class AppComponent {
     { title: 'Ayuda', url: '/ayuda', icon: 'help-circle-outline' },
     { title: 'Cerrar sesión', url: '/log-in', icon: 'log-out-outline' },
   ];
-  constructor() {}
+
+  constructor() {
+  }
 }

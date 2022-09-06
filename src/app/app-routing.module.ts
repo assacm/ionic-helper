@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./ayuda/ayuda.module').then( m => m.AyudaPageModule)
   },
   {
-    path: 'info-paciente',
+    path: 'info-paciente/:id',
     loadChildren: () => import('./info-paciente/info-paciente.module').then( m => m.InfoPacientePageModule)
   },
   {
@@ -36,7 +36,7 @@ const routes: Routes = [
     loadChildren: () => import('./registrar-cuidador/registrar-cuidador.module').then( m => m.RegistrarCuidadorPageModule)
   },
   {
-    path: 'editar-paciente',
+    path: 'editar-paciente/:id',
     loadChildren: () => import('./editar-paciente/editar-paciente.module').then( m => m.EditarPacientePageModule)
   },
   {
@@ -50,6 +50,18 @@ const routes: Routes = [
   {
     path: 'lista-contactos',
     loadChildren: () => import('./lista-contactos/lista-contactos.module').then( m => m.ListaContactosPageModule)
+  },
+  {
+    path: 'crear-contacto',
+    loadChildren: () => import('./crear-contacto/crear-contacto.module').then( m => m.CrearContactoPageModule)
+  },
+  {
+    path: 'editar-contacto',
+    loadChildren: () => import('./editar-contacto/editar-contacto.module').then( m => m.EditarContactoPageModule)
+  },
+  {
+    path: 'ambulancia',
+    loadChildren: () => import('./ambulancia/ambulancia.module').then( m => m.AmbulanciaPageModule)
   }
 ];
 

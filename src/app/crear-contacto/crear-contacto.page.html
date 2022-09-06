@@ -1,0 +1,33 @@
+<ion-toolbar>
+  <ion-button slot="start" [routerLink]="['/lista-contactos']">
+        <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+        Volver
+  </ion-button>
+ </ion-toolbar>
+
+ <ion-content>
+ 
+ <div class="formulario">
+   <h2>Editar contacto</h2>
+  <div class="uno">
+     <ion-label>Nombre</ion-label>
+     <ion-input></ion-input>
+     <ion-label>Apellidos</ion-label>
+     <ion-input></ion-input>
+   </div>
+    
+      <div class="uno">
+         <ion-label>Relación</ion-label>
+         <ion-input></ion-input>
+         <ion-label >Número de teléfono</ion-label>
+         <ion-input ></ion-input>
+         <ion-label>Correo electrónico</ion-label>
+         <ion-input></ion-input>
+      </div>  
+ </div>
+ <div class="button"><ion-button [routerLink]="['/lista-contactos']" size="large">Guardar</ion-button>
+ </div>
+ 
+ 
+ </ion-content>
+ 

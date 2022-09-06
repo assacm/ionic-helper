@@ -10,20 +10,20 @@
     <ion-list-header>
       <h2><strong>Contactos</strong></h2>
     </ion-list-header> 
-       <ion-card button="true" [routerLink]="['/lista-contactos']">
+       <ion-card button="true" *ngFor="let contacto of contactos">
           <div class="contenedor">
               
             <div class="uno">
               <ion-icon name="person-circle-outline"></ion-icon>
             </div>
             <div class="dos">
-              <h2>Alma Delia Mendivil Romero</h2>
-              <ion-label>Madre</ion-label>
+              <h2>{{contacto.name}} {{contacto.apellido}}</h2>
+              <ion-label>{{contacto.relacion}}</ion-label>
             </div>
          </div>    
        </ion-card>
     </ion-list>
-    <ion-fab [routerLink]="['/']" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab [routerLink]="['/crear-contacto']" vertical="bottom" horizontal="end" slot="fixed">
       <ion-fab-button>
         <ion-icon name="person-add"></ion-icon>      
       </ion-fab-button>

@@ -8,27 +8,27 @@
 <ion-content>
   <div class="contenedor-datos"> 
     <div class="cajita">
-      <div class="uno" ><ion-label>Alma Julissa Casillas Mendivil{{nombre}}</ion-label></div>
-      <div class="dos"><ion-label> HLP001</ion-label></div>
+      <div class="uno" ><ion-label>{{nombre}} {{apellido}}</ion-label></div>
+      <div class="dos"><ion-label> {{disp}}</ion-label></div>
     </div>
     <div class="cajita">
       <div class="uno" ><ion-label>Sexo</ion-label></div>
-      <div class="dos"><ion-label> Mujer</ion-label></div>
+      <div class="dos"><ion-label> {{sexo}}</ion-label></div>
       <div class="uno" ><ion-label>Edad</ion-label></div>
-      <div class="dos"><ion-label> 22</ion-label></div>
+      <div class="dos"><ion-label>{{edad}}</ion-label></div>
 
     </div>
     <div class="cajita">
       <div class="uno" ><ion-label>Tipo de sangre</ion-label></div>
-      <div class="dos"><ion-label>O+</ion-label></div>
+      <div class="dos"><ion-label>{{sangre}}</ion-label></div>
     </div>
     <div class="cajita">
       <div class="uno" ><ion-label>Servicio médico</ion-label></div>
-      <div class="dos"><ion-label> IMSS</ion-label></div>
+      <div class="dos"><ion-label>{{servMed}}</ion-label></div>
     </div>
     <div class="cajita">
       <div class="uno" ><ion-label>No. Seguridad Social</ion-label></div>
-      <div class="dos"><ion-label>1234567890</ion-label></div>
+      <div class="dos"><ion-label>{{nss}}</ion-label></div>
     </div>
   </div>
 
@@ -41,8 +41,8 @@
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item *ngFor="let entry of form">
-              <ion-label>{{entry.val}}</ion-label>
+            <ion-item *ngFor="let entry of alergias">
+              <ion-label>{{entry}}</ion-label>
             </ion-item>
           </ion-list>
         </div>
@@ -59,8 +59,8 @@
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item *ngFor="let entry of form">
-              <ion-label>{{entry.val}}</ion-label>
+            <ion-item *ngFor="let entry of medicamentos">
+              <ion-label>{{entry}}</ion-label>
             </ion-item>
           </ion-list>
         </div>
@@ -76,8 +76,8 @@
         </ion-item>
         <div class="ion-padding" slot="content">
           <ion-list>
-            <ion-item *ngFor="let entry of form">
-              <ion-label>{{entry.val}}</ion-label>
+            <ion-item *ngFor="let entry of enfermedades">
+              <ion-label>{{entry}}</ion-label>
             </ion-item>
           </ion-list>
         </div>
@@ -88,7 +88,7 @@
   </div>
    <div class="buttons">
     <ion-button [routerLink]="['/pacientes']" color="primary" size="large" >Compartir</ion-button>
-    <ion-button class="secundario" [routerLink]="['/editar-paciente']" size="large" >Editar</ion-button>
+    <ion-button class="secundario" [routerLink]="['/editar-paciente',id]" size="large" >Editar</ion-button>
     
 
    </div>
