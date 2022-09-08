@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/http": "^5.44.0",
-    "@awesome-cordova-plugins/web-socket-server": "^5.44.0",
+    "@awesome-cordova-plugins/web-socket-server": "^5.45.0",
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.1.0",
     "@capacitor/haptics": "4.0.1",
@@ -29,7 +29,9 @@
     "@ionic/angular": "^6.1.9",
     "cordova-plugin-advanced-http": "^3.3.1",
     "cordova-plugin-websocket-server": "^1.6.0",
+    "express": "^4.18.1",
     "rxjs": "~6.6.0",
+    "socket.io": "^4.5.2",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },

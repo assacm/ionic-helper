@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WebSocketServer, } from '@awesome-cordova-plugins/web-socket-server';
 
 @Component({
   selector: 'app-log-in',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogInPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
