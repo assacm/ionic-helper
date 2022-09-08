@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+
+
 
 @Component({
   selector: 'app-crear-contacto',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearContactoPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+  }
+
+  listaContactos(){
+    this.router.navigate(['/lista-contactos'])
   }
 
 }

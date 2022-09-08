@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 //import { WebSocketServer } from '@awesome-cordova-plugins/web-socket-server';
+//import {SocketIoModule,SocketIoConfig} from 'ng-socket-io';
 
 
 @NgModule({

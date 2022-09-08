@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-
+//import {Socket} from 'ng-socket-io';
+//import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

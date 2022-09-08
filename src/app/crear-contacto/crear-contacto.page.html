@@ -1,5 +1,5 @@
 <ion-toolbar>
-  <ion-button slot="start" [routerLink]="['/lista-contactos']">
+  <ion-button slot="start" (click)="listaContactos()">
         <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
         Volver
   </ion-button>
@@ -8,7 +8,7 @@
  <ion-content>
  
  <div class="formulario">
-   <h2>Editar contacto</h2>
+   <h2>Registrar contacto</h2>
   <div class="uno">
      <ion-label>Nombre</ion-label>
      <ion-input></ion-input>
@@ -25,7 +25,7 @@
          <ion-input></ion-input>
       </div>  
  </div>
- <div class="button"><ion-button [routerLink]="['/lista-contactos']" size="large">Guardar</ion-button>
+ <div class="button"><ion-button (click)="listaContactos()" size="large">Guardar</ion-button>
  </div>
  
  
